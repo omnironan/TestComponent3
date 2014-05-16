@@ -7,5 +7,11 @@ namespace TestComponent3
 {
     public class Class1
     {
+        public void DoStuff()
+        {
+            var c = new TestComponent2.Class1();
+            var name = c.GetName();
+            System.Diagnostics.Debug.WriteLine(name);
+        }
     }
 }

@@ -5,7 +5,7 @@
     <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5e9f1e46-e785-4361-99dd-bbc99d88211f}</ProjectGuid>
+    <ProjectGuid>{5E9F1E46-E785-4361-99DD-BBC99D88211F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TestComponent3</RootNamespace>
@@ -34,15 +34,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .NET Framework is automatically included -->
-  </ItemGroup>
-  <ItemGroup>
     <TargetPlatform Include="WindowsPhoneApp, Version=8.1" />
     <TargetPlatform Include="Windows, Version=8.1" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="TestComponent1">
+      <HintPath>..\..\..\ComponentsGroup\ComponentsGroup\packages\TestComponent1.1.0\lib\portable-win81+wpa81\TestComponent1.dll</HintPath>
+    </Reference>
+    <Reference Include="TestComponent2">
+      <HintPath>..\..\..\ComponentsGroup\ComponentsGroup\packages\TestComponent2.1.2\lib\portable-win81+wpa81\TestComponent2.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -52,5 +60,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-
 </Project>
