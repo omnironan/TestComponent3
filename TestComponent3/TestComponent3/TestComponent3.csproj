@@ -43,10 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="TestComponent1">
-      <HintPath>..\..\..\ComponentsGroup\ComponentsGroup\packages\TestComponent1.1.0\lib\portable-win81+wpa81\TestComponent1.dll</HintPath>
+      <HintPath>..\packages\TestComponent1.1.0\lib\portable-win81+wpa81\TestComponent1.dll</HintPath>
     </Reference>
     <Reference Include="TestComponent2">
-      <HintPath>..\..\..\ComponentsGroup\ComponentsGroup\packages\TestComponent2.1.2\lib\portable-win81+wpa81\TestComponent2.dll</HintPath>
+      <HintPath>..\packages\TestComponent2.1.2\lib\portable-win81+wpa81\TestComponent2.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
